@@ -37,6 +37,53 @@
             text-align: right
             color: #0e1c30
 
+.imagenes-container
+    .club-img
+        background-position: center
+        background-repeat: no-repeat
+        height: 400px
+    .club-img.one
+        background-image: url('../img/foto4.jpg')
+    .club-img.two
+        background-image: url('../img/foto3.jpg')
+    .club-img.three
+        background-image: url('../img/foto2.jpg')
+    .club-img.four
+        background-image: url('../img/foto1.jpg')
+    .club-img.five
+        background-image: url('../img/foto5.jpg')
+    .club-img.six
+        background-image: url('../img/foto6.jpg')
+    .club-img.seven
+        background-image: url('../img/foto7.jpg')
+    .club-img.eight
+        background-image: url('../img/foto8.jpg')
+    .text-container
+        position: absolute
+        top: 25%
+        left: 10%
+        height: 380px
+        width: 618px
+        text-transform: uppercase
+        color: #ffffff
+        font-size: 80.5px
+        font-weight: bold
+        text-align: left
+        .first-row
+            display: flex
+            height: 50%
+            .with-text
+                background-color: #0e1c30
+                width: 65%
+                padding: 45px 0 0 30px
+            .without-text
+                width: 35%
+                background-color: none
+        .second-row
+            background-color: #0e1c30
+            height: 50%
+            padding: 40px 0 0 30px
+
 @media screen and (max-width: 1350px)
     .unete-container
         padding: 10% 0
@@ -67,6 +114,23 @@
             .title-text
                 text-align: center
                 font-size: 60px
+    .imagenes-container
+        .text-container
+            top: 35%
+            left: 15%
+            height: 300px
+            width: 500px
+            font-size: 60.5px
+            .first-row
+                height: 50%
+                .with-text
+                    width: 65%
+                    padding: 40px 0 0 40px
+                .without-text
+                    width: 35%
+            .second-row
+                height: 50%
+                padding: 30px 0 0 40px
 
 @media screen and (max-width: 767px)
     .unete-container
@@ -82,3 +146,33 @@
         .ventajas-content
             .title-text
                 font-size: 50px
+    .imagenes-container
+        .club-img
+            background-position: center
+            background-repeat: no-repeat
+            height: 300px
+        .text-container
+            left: 0
+            font-size: 45px
+            text-align: center
+            width: 100%
+            height: 150px
+            .first-row
+                display: flex
+                height: 50%
+                background-color: #0e1c30
+                .with-text
+                    width: 100%
+                    padding: 10px 0 0 30px
+                .without-text
+                    width: 0
+            .second-row
+                background-color: #0e1c30
+                padding: 0 0 0 30px
+
+@media screen and (max-width: 1200px)
+    .imagenes-container
+        .club-img.seven
+            display: none
+        .club-img.eight
+            display: none
