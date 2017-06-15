@@ -13,52 +13,70 @@
         font-size: 90px
         line-height: 1.34
         text-align: center
-    .button
-        margin-top: 40px
-        width: 514px
-        height: 113px
-        background-color: #6fa742
-        cursor: pointer
-        .text
-            font-size: 20px
-            text-align: center
-            line-height: 115px
+
+.ventajas-container
+    background-color: white
+    height: 723px
+    padding-top: 70px
+    .ventajas-bolsa
+        background-image: url('../img/bolsa.png')
+        background-position: center
+        background-repeat: no-repeat
+        height: 577px
+        width: 60%
+    .ventajas-content
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: 120px
+        width: 30%
+        text-transform: uppercase
+        .title-text
+            font-size: 100.5px
+            line-height: 0.8
+            text-align: right
+            color: #0e1c30
 
 @media screen and (max-width: 1350px)
     .unete-container
         padding: 10% 0
         .main-text
             font-size: 80px
-        .button
-            width: 414px
-            height: 83px
-            .text
-                font-size: 18px
-                line-height: 85px
+    .ventajas-container
+        .ventajas-bolsa
+            background-size: 80%
+        .ventajas-content
+            .title-text
+                font-size: 70px
 
 @media screen and (max-width: 1110px)
     .unete-container
         padding: 7% 0
         .main-text
             font-size: 60px
-        .button
-            width: 384px
-            height: 73px
-            .text
-                font-size: 16px
-                line-height: 75px
+    .ventajas-container
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-top: 20px
+        .ventajas-bolsa
+            height: 350px
+        .ventajas-content
+            margin-top: 20px
+            .title-text
+                font-size: 60px
 
 @media screen and (max-width: 767px)
     .unete-container
         background-size: 1000px
         background-position: center 0
-        background-color: red
         padding: 7% 0
         .main-text
             font-size: 60px
-        .button
-            width: 384px
-            height: 73px
-            .text
-                font-size: 16px
-                line-height: 75px
+    .ventajas-container
+        .ventajas-bolsa
+            background-size: 100%
+            width: 80%
+        .ventajas-content
+            .title-text
+                font-size: 50px
