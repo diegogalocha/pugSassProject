@@ -1,13 +1,14 @@
 /*global require*/
 "use strict";
 
-var gulp = require('gulp'),
-  path = require('path'),
-  data = require('gulp-data'),
-  pug = require('gulp-pug'),
-  prefix = require('gulp-autoprefixer'),
-  sass = require('gulp-sass'),
-  browserSync = require('browser-sync');
+var gulp = require('gulp');
+var path = require('path');
+var data = require('gulp-data');
+var pug = require('gulp-pug');
+var prefix = require('gulp-autoprefixer');
+var sass = require('gulp-sass');
+var browserSync = require('browser-sync');
+var fontgen = require('gulp-fontgen');
 
 /*
  * Directories here
@@ -93,3 +94,10 @@ gulp.task('build', ['sass', 'pug']);
  * files for changes
  */
 gulp.task('default', ['browser-sync', 'watch']);
+
+gulp.task('fonts', function() {
+  return gulp.src("./src/fonts/*.{ttf,otf}")
+    .pipe(fontgen({
+      dest: "./public/fonts"
+    }));
+});
