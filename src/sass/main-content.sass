@@ -53,7 +53,7 @@
                 font-size: 40px
                 line-height: 40px
 
-.quedadas-container, .productos-container
+.quedadas-container, .productos-container, .todas-ventajas-container
     text-transform: uppercase
     background-color: #f4f4f4
     .title-section
@@ -172,7 +172,53 @@
                         .number
                             &.active
             .add-button
-                button añadir
+                button
+
+.todas-ventajas-container
+    background-color: white
+    width: 80%
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    .first-row-ventajas, .second-row-ventajas
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        .box
+            display: flex
+            flex-direction: column
+            width: 30%
+            .box-img
+                background-position: center
+                background-repeat: no-repeat
+                background-size: 100px
+                width: 100px
+                height: 140px
+                margin: 0 auto
+                &.discount
+                    background-image: url('../img/icono1.png')
+                &.real-test
+                    background-image: url('../img/icono2.png')
+                &.presents
+                    background-image: url('../img/icono3.png')
+                &.merchandising
+                    background-image: url('../img/icono4.png')
+                &.bolsa-corredor
+                    background-image: url('../img/icono5.png')
+                &.much-more
+                    background-image: url('../img/icono6.png')
+            .box-title
+                margin: 0 auto
+            .box-description
+                margin: 0 auto
+    .todas-ventajas-img
+        background-image: url('../img/bolsa.png')
+        background-position: center
+        background-repeat: no-repeat
+        background-size: 500px
+        height: 500px
+        width: 500px
+        margin: 0 auto
 
 @media screen and (max-width: 1350px)
     .quedadas-container
