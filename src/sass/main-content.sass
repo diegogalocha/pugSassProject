@@ -204,6 +204,103 @@
         width: 500px
         margin: 0 auto
 
+.footer-container
+    width: 100%
+    height: 500px
+    background-color: #51ae3b
+    padding: 25px 0
+    text-align: center
+    color: white
+    .footer-row-main
+        display: flex
+        flex-direction: row
+        margin: 0 auto
+        align-items: center
+        justify-content: center
+        .social-links
+            display: flex
+            flex-direction: column
+            padding-right: 28px
+            margin-left: 40px
+            border-right: 2px solid white
+            .hashtag
+                background-image: url('../img/logo_tomtom.jpg')
+                background-position: center
+                background-repeat: no-repeat
+                background-size: 120px
+                height: 35px
+                width: 125px
+            .social-icons
+                display: flex
+                flex-direction: row
+                .social-logo
+                    background-position: center
+                    background-repeat: no-repeat
+                    background-size: 25px
+                    height: 25px
+                    width: 25px
+                    cursor: pointer
+                    margin: 0 3px
+                    &.facebook
+                        background-image: url('../img/icono_fb.png')
+                        background-size: 15px
+                        height: 30px
+                    &.twitter
+                        background-image: url('../img/icono_tw.png')
+                    &.youtube
+                        background-image: url('../img/icono_youtube.png')
+                    &.instagram
+                        background-image: url('../img/icono_instagram.png')
+        .joma-logo
+            background-image: url('../img/logo_footer.jpg')
+            background-position: center
+            background-repeat: no-repeat
+            background-size: 200px
+            height: 100px
+            width: 185px
+    .footer-text
+        font-size: 15px
+        margin-top: 15px
+    .footer-row-colaborators
+        display: flex
+        flex-direction: row
+        justify-content: center
+        margin-top: 5px
+        .tomtom
+            background-image: url('../img/logo_tomtom.jpg')
+            background-position: center
+            background-repeat: no-repeat
+            background-size: 135px
+            height: 35px
+            width: 135px
+        .alphabet
+            background-image: url('../img/logo_alphabet.jpg')
+            background-position: center
+            background-repeat: no-repeat
+            background-size: 120px
+            height: 35px
+            width: 120px
+    .footer-logo-federation
+        background-image: url('../img/logo_rfea.jpg')
+        background-position: center
+        background-repeat: no-repeat
+        background-size: 120px
+        height: 100px
+        width: 120px
+        margin: 10px auto
+    .footer-terms
+        display: flex
+        flex-direction: row
+        text-transform: uppercase
+        cursor: pointer
+        justify-content: center
+        .term-text
+            font-size: 18px
+            margin-top: 30px
+            margin-left: 8px
+            span
+                margin-left: 8px
+
 @media screen and (max-width: 1350px)
     .quedadas-container
         .first-row, .second-row
@@ -237,6 +334,11 @@
                 .add-button
                     .button-text
                         width: 110px
+    .footer-container
+        height: 460px
+        .footer-terms
+            .term-text
+                font-size: 14px
 
 @media screen and (max-width: 767px)
     .quedadas-container
@@ -286,3 +388,11 @@
                         margin: 20px auto
                     .free-price
                         margin: 0 auto
+    .footer-container
+        height: 500px
+        .footer-terms
+            flex-direction: column
+            .term-text
+                margin-top: 0
+                span
+                    display: none
