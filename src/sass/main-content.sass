@@ -1,3 +1,45 @@
+.header-container
+    position: fixed
+    top: 0
+    display: flex
+    flex-direction: row
+    width: 100%
+    height: 100px
+    .curra-y-corre
+        width: 50%
+        height: auto
+        display: flex
+        align-items: center
+        .logo
+            background-image: url('../img/logo.png')
+            background-repeat: no-repeat
+            background-size: 450px
+            height: 70px
+            width: 450px
+            margin: 0 auto
+    .menu-points
+        display: flex
+        flex-direction: row
+        align-items: center
+        width: 50%
+        text-transform: uppercase
+        .menu-text
+            color: #0b1c32
+            text-align: left
+            font-size: 18px
+            margin-right: 40px
+            &.menu-club
+                background-image: url(../img/boton_club.png)
+                background-repeat: no-repeat
+                background-size: 100px
+                height: 69px
+                width: 100px
+                color: white
+                margin-right: 0
+                display: flex
+                align-items: center
+                padding-left: 8px
+
 .quedadas-container, .productos-container, .todas-ventajas-container
     text-transform: uppercase
     background-color: #f4f4f4
@@ -328,6 +370,15 @@
             font-size: 14px
 
 @media screen and (max-width: 1350px)
+    .header-container
+        .curra-y-corre
+            width: 40%
+            .logo
+                background-size: 300px
+                width: 300px
+                height: 45px
+        .menu-points
+            width: 60%
     .quedadas-container
         .first-row, .second-row
             width: 90%
@@ -340,6 +391,12 @@
         width: 80%
 
 @media screen and (max-width: 1110px)
+    .header-container
+        .menu-points
+            .menu-text
+                display: none
+                &.menu-club
+                    display: none
     .quedadas-container
         .first-row, .second-row
             width: 100%
