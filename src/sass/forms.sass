@@ -13,6 +13,8 @@
         .form-group
             width: 100%
             margin-bottom: 40px
+            display: flex
+            flex-direction: column
             input
                 border: solid 3px white
                 background-color: #ececec
@@ -61,6 +63,26 @@
                     height: 25px
                     cursor: pointer
                     background-image: url('../img/flecha2.png')
+            .description-text
+                height: 20px
+                background-color: white
+                .text-container
+                    height: 250px
+                    background-color: white
+                    padding: 20px
+                    textarea
+                        width: 100%
+                        height: 200px
+            .icons
+                display: flex
+                flex-direction: row
+                .attachment, .preview
+                    display: flex
+                    flex-direction: row
+                    .icon
+                        &.attach
+                        &.preview
+                    .name
         .form-button
             cursor: pointer
             font-family: "AkzidenzGroteskBQ-BdCnd"
