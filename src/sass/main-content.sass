@@ -50,7 +50,7 @@
     flex-direction: row
     height: 475px
     .home-text-block
-        width: 55%
+        width: 50%
         display: flex
         flex-direction: column
         justify-content: center
@@ -59,25 +59,26 @@
             background-color: #0e1c30
             color: white
             text-align: left
-            font-size: 40px
+            font-size: 65px
             text-transform: uppercase
-            padding: 0 10px
+            padding: 0 15px
+            height: 65px
+            line-height: 1
             &.first
-                width: 590px
+                width: 510px
             &.second
-                width: 300px
+                width: 260px
             &.third
-                width: 565px
+                width: 490px
             &.fourth
-                width: 370px
+                width: 330px
     .home-logo
         background-image: url('../img/slider.png')
         background-repeat: no-repeat
         background-position: right
-        background-size: 475px
-        height: 340px
-        width: 45%
-        margin-top: 65px
+        background-size: 584px
+        height: 460px
+        width: 55%
 
 .quedadas-container, .productos-container, .todas-ventajas-container
     text-transform: uppercase
@@ -106,7 +107,7 @@
             margin-left: 10px
     .first-row, .second-row
         height: 450px
-        width: 70%
+        width: 75%
         margin: 0 auto
         display: flex
         flex-direction: row
@@ -343,15 +344,10 @@
             display: flex
             flex-direction: column
             padding-right: 28px
-            margin-left: 40px
             border-right: 2px solid white
             .hashtag
-                background-image: url('../img/logo_tomtom.jpg')
-                background-position: center
-                background-repeat: no-repeat
-                background-size: 120px
-                height: 35px
-                width: 125px
+                font-family: "AkzidenzGroteskBQ-MdCnd"
+                font-size: 48px
             .social-icons
                 display: flex
                 flex-direction: row
@@ -458,10 +454,10 @@
     .home-container
         width: 80%
         .home-text-block
-            width: 55%
-        .home-logo
-            background-size: 475px
             width: 45%
+        .home-logo
+            background-size: 500px
+            width: 55%
 
 @media screen and (max-width: 1350px)
     .header-container
@@ -474,10 +470,12 @@
         .menu-points
             width: 60%
     .home-container
+        width: 85%
         .home-text-block
             width: 50%
             .home-text
-                font-size: 30px
+                font-size: 55px
+                height: 55px
                 &.first
                     width: 450px
                 &.second
@@ -516,7 +514,6 @@
             width: initial
             align-items: center
             .home-text
-                font-size: 30px
                 &.first
                     width: 450px
                 &.second
@@ -528,13 +525,16 @@
         .home-logo
             background-size: 500px
             width: 500px
-            height: 500px
+            height: 430px
             margin-top: 0
     .quedadas-container
         .first-row, .second-row
             width: 100%
             .box
                 width: 370px
+                .box-text-container
+                    .box-title
+                        font-size: 36.7px
     .todas-ventajas-container
         width: 95%
         .title-section
@@ -557,11 +557,14 @@
                 font-size: 14px
 
 @media screen and (max-width: 767px)
+    .header-container
+        .curra-y-corre
+            width: 75%
+            padding-left: 10px
     .home-container
         .home-text-block
             width: 100%
             .home-text
-                font-size: 23px
                 text-align: center
                 &.first
                     width: 100%
@@ -574,14 +577,23 @@
         .home-logo
             background-size: 330px
             width: 330px
-            height: 330px
+            height: 275px
     .quedadas-container
+        height: auto
+        padding-bottom: 100px
+        .title-section
+            flex-direction: column
         .first-row, .second-row
             flex-direction: column
             align-items: center
-            height: 700px
+            height: 800px
             .box
-                margin-top: 25px
+                margin-top: 60px
+                .box-text-container
+                    height: 120px
+                    .box-description
+                        font-size: 16.3px
+                        line-height: 1.1
     .todas-ventajas-container
         width: 100%
         .title-section
