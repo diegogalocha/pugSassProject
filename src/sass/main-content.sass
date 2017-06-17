@@ -29,7 +29,7 @@
             font-size: 18px
             margin-right: 40px
             &.menu-club
-                background-image: url(../img/boton_club.png)
+                background-image: url('../img/boton_club.png')
                 background-repeat: no-repeat
                 background-size: 100px
                 height: 69px
@@ -39,6 +39,40 @@
                 display: flex
                 align-items: center
                 padding-left: 8px
+.home-container
+    width: 70%
+    margin: 0 auto
+    display: flex
+    flex-direction: row
+    height: 475px
+    .home-text-block
+        width: 55%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        .home-text
+            background-color: #0e1c30
+            color: white
+            text-align: left
+            font-size: 40px
+            text-transform: uppercase
+            padding: 0 10px
+            &.first
+                width: 590px
+            &.second
+                width: 300px
+            &.third
+                width: 565px
+            &.fourth
+                width: 370px
+    .home-logo
+        background-image: url('../img/slider.png')
+        background-repeat: no-repeat
+        background-position: right
+        background-size: 475px
+        height: 340px
+        width: 45%
+        margin-top: 65px
 
 .quedadas-container, .productos-container, .todas-ventajas-container
     text-transform: uppercase
@@ -385,6 +419,15 @@
         .call-to-action-subtitle
             font-size: 14px
 
+@media screen and (max-width: 1600px)
+    .home-container
+        width: 80%
+        .home-text-block
+            width: 55%
+        .home-logo
+            background-size: 475px
+            width: 45%
+
 @media screen and (max-width: 1350px)
     .header-container
         .curra-y-corre
@@ -395,6 +438,22 @@
                 height: 45px
         .menu-points
             width: 60%
+    .home-container
+        .home-text-block
+            width: 50%
+            .home-text
+                font-size: 30px
+                &.first
+                    width: 450px
+                &.second
+                    width: 230px
+                &.third
+                    width: 430px
+                &.fourth
+                    width: 285px
+        .home-logo
+            background-size: 440px
+            width: 50%
     .quedadas-container
         .first-row, .second-row
             width: 90%
@@ -413,6 +472,29 @@
                 display: none
                 &.menu-club
                     display: none
+    .home-container
+        width: 100%
+        flex-direction: column-reverse
+        align-items: center
+        height: auto
+        .home-text-block
+            width: initial
+            align-items: center
+            .home-text
+                font-size: 30px
+                &.first
+                    width: 450px
+                &.second
+                    width: 230px
+                &.third
+                    width: 430px
+                &.fourth
+                    width: 285px
+        .home-logo
+            background-size: 500px
+            width: 500px
+            height: 500px
+            margin-top: 0
     .quedadas-container
         .first-row, .second-row
             width: 100%
@@ -440,6 +522,24 @@
                 font-size: 14px
 
 @media screen and (max-width: 767px)
+    .home-container
+        .home-text-block
+            width: 100%
+            .home-text
+                font-size: 23px
+                text-align: center
+                &.first
+                    width: 100%
+                &.second
+                    width: 100%
+                &.third
+                    width: 100%
+                &.fourth
+                    width: 100%
+        .home-logo
+            background-size: 330px
+            width: 330px
+            height: 330px
     .quedadas-container
         .first-row, .second-row
             flex-direction: column
