@@ -151,7 +151,7 @@
     height: 1200px
 
 .productos-container
-    width: 70%
+    width: 90%
     height: auto
     margin: 0 auto
     background-color: white
@@ -458,6 +458,8 @@
         .home-logo
             background-size: 500px
             width: 55%
+    .todas-ventajas-container
+        width: 80%
 
 @media screen and (max-width: 1350px)
     .header-container
@@ -491,12 +493,12 @@
         .first-row, .second-row
             width: 90%
     .todas-ventajas-container
-        width: 80%
+        width: 92%
         .first-row-ventajas, .second-row-ventajas
             .box
                 width: 30%
     .productos-container
-        width: 80%
+        width: 100%
 
 @media screen and (max-width: 1110px)
     .header-container
@@ -538,23 +540,46 @@
     .todas-ventajas-container
         width: 95%
         .title-section
-            font-size: 35px
-            line-height: 2
+            font-size: 60px
+            line-height: 1.2
     .productos-container
         width: 95%
+        .title-section
+            font-size: 62px
         .product-box
+            height: 350px
             .product-img
-                background-size: 170px
-                height: 200px
+                background-size: 250px
+                height: 350px
+                width: 100%
             .product-info
+                .product-title
+                    font-size: 25px
+                .product-description
+                    font-size: 19px
+                .product-selection
+                    font-size: 19px
+                    .product-quantity-container
+                        .quantity
+                            font-size: 19px
+                        .number-container
+                            .arrows
+                                .arrow
+                    .product-size
+                        .size-text
+                            font-size: 19px
+                        .numbers
+                            font-size: 25px
                 .add-button
                     .button-text
+                        font-size: 19px
                         width: 110px
+                    .old-price
+                        font-size: 50px
+                    .free-price
+                        font-size: 19px
     .footer-container
-        height: 460px
-        .footer-terms
-            .term-text
-                font-size: 14px
+        height: 500px
 
 @media screen and (max-width: 767px)
     .header-container
@@ -596,13 +621,15 @@
                         line-height: 1.1
     .todas-ventajas-container
         width: 100%
+        padding-top: 50px
         .title-section
             flex-direction: column
+            margin-bottom: 40px
         .first-row-ventajas, .second-row-ventajas
             flex-direction: column
             margin: 0
             .box
-                width: 50%
+                width: 90%
                 margin: 20px auto
         .todas-ventajas-img
             background-size: 325px
@@ -624,18 +651,27 @@
                     background-size: 170px
             .product-info
                 padding: 0 50px 30px
+                text-align: center
                 .product-selection
+                    margin: 25px auto 0
                     .product-size
+                        margin-left: 40px
                 .add-button
                     flex-direction: column
                     .button-text
                         margin: 0 auto
                     .old-price
-                        margin: 20px auto
+                        margin: 10px auto
                     .free-price
                         margin: 0 auto
     .footer-container
-        height: 500px
+        height: 600px
+        .footer-row-main
+            .social-links
+                padding-right: 5px
+            .joma-logo
+                background-size: 175px
+                width: 160px
         .footer-terms
             flex-direction: column
             .term-text
@@ -647,5 +683,11 @@
         height: 165px
         width: 250px
         .call-to-action-text
-            padding-right: 8px
-            padding-top: 50px
+            padding-right: 6px
+            padding-top: 38px
+            .call-to-action-title
+                font-size: 49.3px
+                padding-right: 5px
+                height: 50px
+            .call-to-action-subtitle
+                font-size: 16.4px

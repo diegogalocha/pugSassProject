@@ -5,10 +5,10 @@
     background-image: url('../img/club.jpg')
     background-size: contain
     background-repeat: no-repeat
-    height: auto
+    height: 720px
     text-transform: uppercase
     color: #ffffff
-    padding: 12% 0
+    padding: 50px 0
     .main-text
         font-family: "AkzidenzGroteskBQ-MdCnd"
         font-size: 180px
@@ -23,13 +23,15 @@
         background-image: url('../img/bolsa.png')
         background-position: center
         background-repeat: no-repeat
-        height: 577px
-        width: 60%
+        background-size: 600px
+        height: 558px
+        width: 45%
+        margin-left: 100px
     .ventajas-content
         display: flex
         flex-direction: column
         align-items: center
-        width: 30%
+        width: 550px
         text-transform: uppercase
         .title-text
             font-family: "AkzidenzGroteskBQ-MdCnd"
@@ -140,73 +142,86 @@
         background-color: white
 
 @media screen and (max-width: 1350px)
-    .unete-container
-        padding: 10% 0
-        .main-text
-            font-size: 80px
     .ventajas-container
         .ventajas-bolsa
-            background-size: 80%
+            background-size: 100%
+            margin-left: 60px
         .ventajas-content
+            width: 446px
             margin-top: 100px
             .title-text
-                font-size: 70px
+                font-size: 120px
     .ademas-container
         height: 600px
+        padding: 50px 90px
 
 @media screen and (max-width: 1110px)
     .unete-container
-        height: 450px
-        padding: 7% 0
+        height: 400px
+        padding: 30px 0
+        background-size: cover
+        background-position: center
         .main-text
-            font-size: 60px
+            font-size: 140px
     .ventajas-container
         display: flex
         flex-direction: column
         align-items: center
         padding-top: 20px
+        margin-bottom: 70px
         .ventajas-bolsa
             height: 350px
+            margin-left: 0
         .ventajas-content
             margin-top: 20px
             .title-text
                 text-align: center
-                font-size: 60px
+                font-size: 105px
     .imagenes-container
         .text-container
             top: 250px
             left: 15%
             height: 300px
             width: 500px
-            font-size: 60.5px
+            font-size: 120.5px
             .first-row
                 height: 50%
                 .with-text
                     width: 65%
-                    padding: 40px 0 0 40px
                 .without-text
                     width: 35%
             .second-row
                 height: 50%
-                padding: 30px 0 0 40px
     .ademas-container
-        height: 670px
-        padding: 50px 75px
+        height: 550px
+        padding: 50px 30px
+        .ademas-title
+            font-size: 70.7px
+        .ademas-subtitle, .ademas-discount
+            font-size: 35px
+        .ademas-button
+            height: 100px
+            line-height: 100px
+            margin: 50px auto
+            width: 65%
 
 @media screen and (max-width: 767px)
     .unete-container
         background-size: 1000px
         background-position: center 0
-        padding: 7% 0
         .main-text
-            font-size: 60px
+            font-size: 70px
+        .main-button
+            margin-top: 100px
     .ventajas-container
+        margin-bottom: 0
         .ventajas-bolsa
-            background-size: 100%
-            width: 80%
+            height: 260px
+            background-size: 340px
+            width: 100%
         .ventajas-content
             .title-text
-                font-size: 50px
+                font-size: 90px
     .imagenes-container
         .black-mask
             height: 900px
@@ -233,18 +248,19 @@
                 background-color: #0e1c30
                 padding: 0 0 0 30px
     .ademas-container
-        height: 530px
+        height: 580px
         padding: 50px 0
         .ademas-title
-            font-size: 35px
+            font-size: 55px
         .ademas-subtitle, .ademas-button
-            font-size: 20px
+            font-size: 28px
         .ademas-discount
-            font-size: 20px
+            font-size: 28px
         .ademas-button
+            margin: 80px auto
             width: 100%
-            height: 90px
-            line-height: 90px
+            height: 80px
+            line-height: 80px
 
 @media screen and (max-width: 1200px)
     .imagenes-container
