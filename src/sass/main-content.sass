@@ -425,7 +425,7 @@
 .call-to-action
     position: fixed
     right: 0
-    top: 400px
+    top: calc(100% - 300px)
     z-index: 15
     background-image: url('../img/boton_unete.png')
     background-position: center
@@ -513,6 +513,7 @@
         flex-direction: column-reverse
         align-items: center
         height: auto
+        margin: 100px auto 70px
         .home-text-block
             width: initial
             align-items: center
@@ -614,8 +615,10 @@
             align-items: center
             height: 800px
             .box
+                width: 100%
                 margin-top: 60px
                 .box-text-container
+                    padding: 20px 30px 0
                     height: 120px
                     .box-description
                         font-size: 16.3px

@@ -1,6 +1,8 @@
 .unete-ahora-container
     height: 976px
     background-color: #ececec
+    &.opened
+        height: 1175px
     .title-section
         .decorated-text
             background-size: 452px
@@ -63,26 +65,50 @@
                     height: 25px
                     cursor: pointer
                     background-image: url('../img/flecha2.png')
+                    a
+                        padding: 13px
             .description-text
                 height: 20px
                 background-color: white
-                .text-container
-                    height: 250px
-                    background-color: white
-                    padding: 20px
-                    textarea
-                        width: 100%
-                        height: 200px
+                font-family: 'AkzidenzGroteskBQ-Reg'
+                font-size: 16.1px
+                color: #0e1c30
+                text-transform: none
+                padding-left: 40px
+            .text-container
+                height: 235px
+                background-color: white
+                padding: 20px 40px 15px
+                textarea
+                    width: 100%
+                    height: 200px
             .icons
                 display: flex
                 flex-direction: row
+                width: 100%
+                height: 40px
+                background-color: white
+                padding-left: 40px
+                .preview
+                    margin-left: 40px
                 .attachment, .preview
                     display: flex
                     flex-direction: row
+                    cursor: pointer
                     .icon
+                        background-position: center
+                        background-repeat: no-repeat
+                        background-size: 18px
+                        width: 25px
+                        height: 25px
                         &.attach
+                            background-image: url('../img/attach-icon.png')
                         &.preview
+                            background-image: url('../img/preview-icon.png')
                     .name
+                        font-family: 'AkzidenzGroteskBQ-MdCnd'
+                        font-size: 16.1px
+                        color: #9f9f9f
         .form-button
             cursor: pointer
             font-family: "AkzidenzGroteskBQ-BdCnd"
@@ -93,9 +119,12 @@
             color: white
             text-align: center
             line-height: 2.7
+            &.active
+                background-color: #c00d1f
 
 @media screen and (max-width: 1350px)
     .unete-ahora-container
+        height: 840px
         .title-section
             font-size: 60px
             .decorated-text
@@ -132,6 +161,10 @@
 
 @media screen and (max-width: 767px)
     .unete-ahora-container
+        .title-section
+            .decorated-text
+                background-size: 100%
+                width: 96%
         .unete-form
             margin: 70px auto
             .form-group
@@ -149,6 +182,11 @@
                 .selector
                     .description
                         display: none
+                .description-text
+                    font-size: 14px
+                .icons
+                    .preview
+                        margin-left: 10px
             .form-button
                 height: 80px
                 line-height: 2
