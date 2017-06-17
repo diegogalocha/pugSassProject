@@ -15,10 +15,16 @@
         line-height: 1.34
         text-align: center
 
-.ventajas-container, .disfruta-bolsa-container
+.ventajas-container
     background-color: white
     height: 723px
     padding-top: 70px
+    &.disfruta-container
+        height: 625px
+        background-color: #dfdfdf
+        margin-top: 70px
+        .ventajas-bolsa
+            margin-left: 75px
     .ventajas-bolsa
         background-image: url('../img/bolsa.png')
         background-position: center
@@ -33,6 +39,8 @@
         align-items: center
         width: 550px
         text-transform: uppercase
+        &.disfruta-content
+            width: 650px
         .title-text
             font-family: "AkzidenzGroteskBQ-MdCnd"
             font-size: 150.5px
@@ -41,23 +49,26 @@
             text-align: right
             color: #0e1c30
         .price-text-container
+            width: 100%
             display: flex
             flex-direction: row
+            color: #152136
             .price-text
+                font-family: "AkzidenzGroteskBQ-MdCnd"
+                font-size: 75.2px
+                margin-right: 45px
+                line-height: 2
             .price-number
+                font-family: "AkzidenzGroteskBQ-BdCnd"
+                font-size: 85.2px
                 background-image: url('../img/icono_10.png')
                 background-position: center
                 background-repeat: no-repeat
-                font-size: 40px
-                width: 100px
-                height: 100px
-                background-size: 100px
-                line-height: 100px
-                padding-left: 9px
-.disfruta-bolsa-container
-    background-color: gray
-    .ventajas-bolsa, .ventajas-content
-        width: 50%
+                width: 160px
+                height: 160px
+                background-size: 160px
+                line-height: 1.9
+                padding-left: 25px
 
 .imagenes-container
     position: relative
@@ -143,14 +154,32 @@
 
 @media screen and (max-width: 1350px)
     .ventajas-container
+        &.disfruta-container
+            .ventajas-bolsa
+                margin-left: 20px
         .ventajas-bolsa
             background-size: 100%
             margin-left: 60px
         .ventajas-content
             width: 446px
             margin-top: 100px
+            &.disfruta-content
+                width: 500px
+                .title-text
+                    font-size: 100px
             .title-text
                 font-size: 120px
+            .price-text-container
+                padding-left: 60px
+                .price-text
+                    margin-right: 0
+                    font-size: 50px
+                    line-height: 2.5
+                .price-number
+                    font-size: 67.2px
+                    width: 130px
+                    height: 130px
+                    background-size: 120px
     .ademas-container
         height: 600px
         padding: 50px 90px
@@ -169,6 +198,11 @@
         align-items: center
         padding-top: 20px
         margin-bottom: 70px
+        &.disfruta-container
+            height: 740px
+            .ventajas-bolsa
+                padding: 0
+                margin: 0
         .ventajas-bolsa
             height: 350px
             margin-left: 0
@@ -215,13 +249,26 @@
             margin-top: 100px
     .ventajas-container
         margin-bottom: 0
+        &.disfruta-container
+            height: 600px
         .ventajas-bolsa
             height: 260px
             background-size: 340px
             width: 100%
         .ventajas-content
+            &.disfruta-content
+                .title-text
+                    font-size: 80px
             .title-text
                 font-size: 90px
+            .price-text-container
+                .price-text
+                    font-size: 40px
+                .price-number
+                    font-size: 50px
+                    width: 113px
+                    height: 100px
+                    background-size: 100px
     .imagenes-container
         .black-mask
             height: 900px
