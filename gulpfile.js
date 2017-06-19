@@ -25,7 +25,7 @@ var paths = {
  * matching file name. index.pug - index.pug.json
  */
 gulp.task('pug', function () {
-  return gulp.src('./src/**/*.pug')
+  return gulp.src('./src/*.pug')
     .pipe(pug())
     .on('error', function (err) {
       process.stderr.write(err.message + '\n');
