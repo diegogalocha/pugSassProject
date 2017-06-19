@@ -15,6 +15,37 @@
             .selector
                 .name tu historia
                 .description Si quieres, cuéntanos ya tu historia
-                .arrow
-                    a(href="unete3.html")
-        .form-button únete
+                .arrow(onclick="openTextArea()")
+            .description-text.display-none Pequeñas palabras que inspiran a los demás
+            .text-container.display-none
+                textarea
+            .icons.display-none
+                .attachment
+                    .icon.attach
+                    .name Adjuntar imagen
+                .preview
+                    .icon.preview
+                    .name Previsualizar
+        .form-button(id="b1") únete
+
+script.
+    function openTextArea() {
+        var descriptionText = document.getElementsByClassName('description-text')[0];
+        var textContainer = document.getElementsByClassName('text-container')[0];
+        var icons = document.getElementsByClassName('icons')[0];
+        var formButton = document.getElementById('b1');
+        var container = document.getElementsByClassName('unete-ahora-container')[0];
+        if (descriptionText.classList.contains('display-none')) {
+            descriptionText.classList.remove('display-none')
+            textContainer.classList.remove('display-none')
+            icons.classList.remove('display-none')
+            container.style.height = '1150px';
+            formButton.style.backgroundColor = '#c00d1f';
+        } else {
+            descriptionText.classList.add('display-none')
+            textContainer.classList.add('display-none')
+            icons.classList.add('display-none')
+            container.style.height = '976px';
+            formButton.style.backgroundColor = '#a2a2a2';
+        }
+    }
