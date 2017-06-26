@@ -26,7 +26,7 @@
                 .preview
                     .icon.preview
                     .name Previsualizar
-        .form-button(id="b1") únete
+        .form-button(id="b1") Un paso más... ahora a por tu bolsa
 
 script.
     function openTextArea() {
@@ -40,12 +40,12 @@ script.
             textContainer.classList.remove('display-none')
             icons.classList.remove('display-none')
             container.style.height = '1200px';
-            formButton.style.backgroundColor = '#c00d1f';
+            formButton.classList.add('active');
         } else {
             descriptionText.classList.add('display-none')
             textContainer.classList.add('display-none')
             icons.classList.add('display-none')
             container.style.height = '976px';
-            formButton.style.backgroundColor = '#a2a2a2';
+            formButton.classList.remove('active');
         }
     }
