@@ -93,7 +93,7 @@ gulp.task('build', ['sass', 'pug']);
 gulp.task('default', ['browser-sync', 'watch']);
 
 gulp.task('fonts', function() {
-  return gulp.src("./src/fonts/*.{ttf,otf}")
+  return gulp.src("./src/sass/fonts/*.{ttf,otf}")
     .pipe(fontgen({
       dest: "./public/fonts"
     }));
