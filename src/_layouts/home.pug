@@ -8,9 +8,10 @@ html
         block head_end
 
     body
-        include ../_partials/main-content/header
-        include ../_partials/main-content/call-to-action
-        block content
+        .body-container
+            include ../_partials/main-content/header
+            include ../_partials/main-content/call-to-action
+            block content
 
         script(type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
         block body_end
