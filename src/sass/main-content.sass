@@ -200,36 +200,9 @@
                 font-size: 24px
                 color: #0b1c32
                 font-family: "AkzidenzGroteskBQ-MdCnd"
-                .product-quantity-container
-                    display: flex
-                    flex-direction: column
-                    .quantity
-                        font-family: "AkzidenzGroteskBQ-MdCnd"
-                        font-size: 24px
-                        height: 30px
-                    .number-container
-                        display: flex
-                        flex-direction: row
-                        padding-top: 4px
-                        .arrows
-                            display: flex
-                            flex-direction: column
-                            margin-left: 5px
-                            .arrow
-                                background-position: center
-                                background-repeat: no-repeat
-                                background-size: 10px
-                                width: 15px
-                                height: 15px
-                                cursor: pointer
-                                &.up
-                                    background-image: url('../img/flecha1.png')
-                                &.down
-                                    background-image: url('../img/flecha2.png')
                 .product-size
                     display: flex
                     flex-direction: column
-                    margin-left: 150px
                     font-size: 15px
                     color: #0b1c32
                     .size-text
@@ -261,6 +234,8 @@
                     text-align: center
                     line-height: 47px
                     cursor: pointer
+                    &:hover
+                        background-color: #d40b1e
                 .old-price
                     font-family: "AkzidenzGroteskBQ-MdCnd"
                     color: #c8c8c8
@@ -564,12 +539,6 @@
                     font-size: 19px
                 .product-selection
                     font-size: 19px
-                    .product-quantity-container
-                        .quantity
-                            font-size: 19px
-                        .number-container
-                            .arrows
-                                .arrow
                     .product-size
                         .size-text
                             font-size: 19px
