@@ -196,6 +196,7 @@
             .product-selection
                 display: flex
                 flex-direction: row
+                justify-content: space-between
                 margin-top: 25px
                 font-size: 24px
                 color: #0b1c32
@@ -211,7 +212,7 @@
                         height: 30px
                     .numbers
                         font-family: "Oswald-Bold"
-                        font-size: 30px
+                        font-size: 25px
                         display: flex
                         flex-direction: row
                         color: #adadad
@@ -220,13 +221,22 @@
                             cursor: pointer
                             &.active
                                 color: #0b1c32
+                .tick
+                    background-repeat: no-repeat
+                    background-position: center
+                    background-size: 75px
+                    width: 75px
+                    height: 75px
+                    margin-right: 150px
+                    background-image: url('../img/check.png')
             .add-button
                 display: flex
                 flex-direction: row
+                justify-content: space-between
                 margin-top: 25px
                 .button-text
-                    font-family: "Oswald-Bold"
-                    font-size: 24px
+                    font-family: "Oswald-Regular"
+                    font-size: 18px
                     background-color: #e0051a
                     color: white
                     height: 46px
@@ -234,20 +244,20 @@
                     text-align: center
                     line-height: 47px
                     cursor: pointer
+                    text-transform: none
                     &:hover
                         background-color: #d40b1e
-                .old-price
-                    font-family: "Oswald-Regular"
-                    color: #c8c8c8
-                    font-size: 59px
-                    line-height: 50px
-                    text-decoration: line-through
-                    margin: 0 15px
+                    span
+                        font-size: 30px
+                        text-decoration: line-through
+                        text-transform: uppercase
+                        padding-right: 15px
                 .free-price
                     font-family: "Oswald-Regular"
                     font-size: 25px
                     color: #45ab34
                     line-height: 70px
+                    margin-right: 150px
 
 .todas-ventajas-container
     background-color: white
