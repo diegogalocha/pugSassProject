@@ -9,6 +9,7 @@ var prefix = require('gulp-autoprefixer');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync');
 var fontgen = require('gulp-fontgen');
+var htmlPrettify = require('gulp-html-prettify');
 
 /*
  * Directories here
@@ -18,6 +19,12 @@ var paths = {
   sass: './src/sass/',
   css: './public/css/',
   data: './src/_data/'
+};
+
+var prettifyOpts = {
+  indentChar: ' ',
+  indentSize: 4,
+  unformatted: ['a', 'sub', 'sup', 'b', 'i', 'u']
 };
 
 /**
@@ -31,6 +38,7 @@ gulp.task('pug', function () {
       process.stderr.write(err.message + '\n');
       this.emit('end');
     })
+    .pipe(htmlPrettify(prettifyOpts))
     .pipe(gulp.dest(paths.public));
 });
 
@@ -60,8 +68,7 @@ gulp.task('browser-sync', ['sass', 'pug'], function () {
 gulp.task('sass', function () {
   return gulp.src(paths.sass + '*.sass')
     .pipe(sass({
-      includePaths: [paths.sass],
-      outputStyle: 'compressed'
+      includePaths: [paths.sass]
     }))
     .on('error', sass.logError)
     .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
@@ -72,6 +79,7 @@ gulp.task('sass', function () {
       stream: true
     }));
 });
+// outputStyle: 'compressed'
 
 /**
  * Watch scss files for changes & recompile
