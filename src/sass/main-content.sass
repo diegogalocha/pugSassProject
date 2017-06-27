@@ -246,6 +246,9 @@
                     line-height: 47px
                     cursor: pointer
                     text-transform: none
+                    display: flex
+                    flex-direction: row
+                    justify-content: center
                     &:hover
                         background-color: #d40b1e
                     span
@@ -258,7 +261,7 @@
                     font-size: 25px
                     color: #45ab34
                     line-height: 70px
-                    margin-right: 150px
+                    margin-right: 50px
 
 .todas-ventajas-container
     background-color: white
@@ -604,13 +607,18 @@
     .productos-container
         width: 95%
         .title-section
-            font-size: 62px
+            font-size: 52px
+            .decorated-text
+                background-size: 295px
+                width: 295px
+                height: 70px
+                line-height: 70px
         .product-box
             height: 350px
             .product-img
-                background-size: 250px
+                background-size: 210px
                 height: 350px
-                width: 100%
+                width: 450px
             .product-info
                 .product-title
                     font-size: 25px
@@ -627,6 +635,8 @@
                     .button-text
                         font-size: 19px
                         width: 110px
+                        .joma-sport-url
+                            display: none
                     .old-price
                         font-size: 50px
                     .free-price
@@ -712,6 +722,8 @@
                     width: 320px
                     font-size: 32px
     .productos-container
+        margin: 30px auto 0
+        padding: 0 0 30px
         .title-section
             flex-direction: column
             margin-top: 30px
@@ -724,6 +736,7 @@
             .product-img
                 background-size: 150px
                 height: 200px
+                width: 320px
                 &.calcetines, &.gorra
                     background-size: 170px
             .product-info
@@ -733,10 +746,15 @@
                     margin: 25px auto 0
                     .product-size
                         margin-left: 40px
+                    .tick
+                        display: none
                 .add-button
                     flex-direction: column
                     .button-text
                         margin: 0 auto
+                        width: 210px
+                        .joma-sport-url
+                            display: initial
                     .old-price
                         margin: 10px auto
                     .free-price
