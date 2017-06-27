@@ -29,5 +29,8 @@
     "pug",
     "sass",
     "browsersync"
-  ]
+  ],
+  "dependencies": {
+    "gulp-html-prettify": "0.0.1"
+  }
 }
